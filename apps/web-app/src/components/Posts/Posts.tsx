@@ -21,20 +21,24 @@ export const Posts = () => {
 
   return (
     <table>
-      <tr>
-        <th>title</th>
-        <th>body</th>
-        <th>userId</th>
-      </tr>
-      {data.posts.map((item: PostProps) => {
-        return (
-          <tr key={item.id}>
-            <td>{item.title}</td>
-            <td>{item.body}</td>
-            <td>{item.userId}</td>
-          </tr>
-        );
-      })}
+      <thead>
+        <tr>
+          <th>title</th>
+          <th>body</th>
+          <th>userId</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.posts.map((item: PostProps) => {
+          return (
+            <tr key={item.id}>
+              <td>{item.title}</td>
+              <td>{item.body}</td>
+              <td>{item.userId}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 };
