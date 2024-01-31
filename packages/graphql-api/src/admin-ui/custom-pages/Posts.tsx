@@ -1,9 +1,19 @@
-import { POSTS_QUERY } from './graphql';
-import { useQuery } from '@apollo/client';
-import { PostsQuery } from './graphql.generated';
+import React from 'react';
+import { gql, useQuery } from '@apollo/client';
+
+const postsQuery = gql`
+  query Posts {
+    posts {
+      id
+      title
+      userId
+      body
+    }
+  }
+`;
 
 export const Posts = () => {
-  const { loading, error, data } = useQuery<PostsQuery>(POSTS_QUERY);
+  const { loading, error, data } = useQuery(postsQuery);
 
   if (loading) {
     return <p>Loading...</p>;
@@ -23,7 +33,7 @@ export const Posts = () => {
         </tr>
       </thead>
       <tbody>
-        {data?.posts.map((item) => {
+        {data.posts.map((item) => {
           return (
             <tr key={item.id}>
               <td>{item.title}</td>
