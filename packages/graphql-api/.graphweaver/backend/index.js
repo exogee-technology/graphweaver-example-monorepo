@@ -96,7 +96,10 @@ var resolvers = [PostResolver];
 
 // src/backend/index.ts
 var graphweaver = new import_graphweaver_server.default({
-  resolvers
+  resolvers,
+  fileAutoGenerationOptions: {
+    watchForFileChangesInPaths: ["../../apps/web-app"]
+  }
 });
 var handler = graphweaver.handler();
 // Annotate the CommonJS export names for ESM import in node:

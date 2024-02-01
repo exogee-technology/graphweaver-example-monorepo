@@ -85,16 +85,16 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@apollo/server@4.10.0)
       '@exogee/graphweaver':
-        specifier: link:/Users/siowhoikoon/dev/graphweaver/src/packages/core
+        specifier: link:../../../graphweaver/src/packages/core
         version: link:../../../graphweaver/src/packages/core
       '@exogee/graphweaver-rest':
-        specifier: link:/Users/siowhoikoon/dev/graphweaver/src/packages/rest
+        specifier: link:../../../graphweaver/src/packages/rest
         version: link:../../../graphweaver/src/packages/rest
       '@exogee/graphweaver-scalars':
-        specifier: link:/Users/siowhoikoon/dev/graphweaver/src/packages/scalars
+        specifier: link:../../../graphweaver/src/packages/scalars
         version: link:../../../graphweaver/src/packages/scalars
       '@exogee/graphweaver-server':
-        specifier: link:/Users/siowhoikoon/dev/graphweaver/src/packages/server
+        specifier: link:../../../graphweaver/src/packages/server
         version: link:../../../graphweaver/src/packages/server
       class-validator:
         specifier: 0.14.0
@@ -106,7 +106,7 @@ importers:
         specifier: 16.8.1
         version: 16.8.1
       graphweaver:
-        specifier: link:/Users/siowhoikoon/dev/graphweaver/src/packages/cli
+        specifier: link:../../../graphweaver/src/packages/cli
         version: link:../../../graphweaver/src/packages/cli
       react:
         specifier: 18.2.0
