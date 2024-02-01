@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "app": "pnpm --filter web-app",
+    "app-react": "pnpm --filter react",
     "graphql-api": "pnpm --filter graphql-api"
   },
   "keywords": [],
