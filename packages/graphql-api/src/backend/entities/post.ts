@@ -1,15 +1,15 @@
 import { BaseEntity, Field } from '@exogee/graphweaver-rest';
 
 export class Post extends BaseEntity {
-  @Field()
-  id!: string;
+	@Field()
+	id!: string;
 
-  @Field()
-  title!: string;
+	@Field()
+	title!: string;
 
-  @Field()
-  body!: string;
+	@Field()
+	body!: string;
 
-  @Field()
-  userId!: string;
+	@Field()
+	userId!: string;
 }

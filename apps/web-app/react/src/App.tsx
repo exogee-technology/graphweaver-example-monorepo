@@ -1,11 +1,11 @@
 import { Posts } from './components';
 
 const App = () => {
-  return (
-    <>
-      <Posts />
-    </>
-  );
+	return (
+		<>
+			<Posts />
+		</>
+	);
 };
 
 export default App;

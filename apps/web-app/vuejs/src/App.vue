@@ -1,17 +1,15 @@
 <script setup lang="ts">
-import { POSTS_QUERY } from './graphql';
-import { type PostsQuery } from './graphql.generated';
+import { POSTS_QUERY } from './graphql'
+import { type PostsQuery } from './graphql.generated'
 import { useQuery } from '@vue/apollo-composable'
 
-const { result, loading, error } = useQuery<PostsQuery>(POSTS_QUERY);
+const { result, loading, error } = useQuery<PostsQuery>(POSTS_QUERY)
 </script>
 
 <template>
   <p v-if="error">Something went wrong...</p>
   <p v-if="loading">Loading...</p>
-  <p v-else v-for="post in result?.posts" :key="post.id">
-    {{ post.title }} {{ post.id }}
-  </p>
+  <p v-else v-for="post in result?.posts" :key="post.id">{{ post.title }} {{ post.id }}</p>
   <div></div>
 </template>
 

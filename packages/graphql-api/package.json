@@ -1,30 +1,30 @@
 {
-  "name": "graphql-api",
-  "version": "0.1.0",
-  "description": "graphql-api Graphweaver Project",
-  "scripts": {
-    "build": "graphweaver build",
-    "start": "graphweaver start",
-    "watch": "graphweaver watch",
-    "import": "graphweaver import"
-  },
-  "dependencies": {
-    "@apollo/client": "3.8.10",
-    "@as-integrations/aws-lambda": "2.0.1",
-    "@exogee/graphweaver": "link:../../../graphweaver/src/packages/core",
-    "@exogee/graphweaver-rest": "link:../../../graphweaver/src/packages/rest",
-    "@exogee/graphweaver-scalars": "link:../../../graphweaver/src/packages/scalars",
-    "@exogee/graphweaver-server": "link:../../../graphweaver/src/packages/server",
-    "class-validator": "0.14.0",
-    "got": "11.8.5",
-    "graphql": "16.8.1",
-    "graphweaver": "link:../../../graphweaver/src/packages/cli",
-    "react": "18.2.0",
-    "reflect-metadata": "0.1.13",
-    "type-graphql": "2.0.0-beta.2"
-  },
-  "devDependencies": {
-    "@types/node": "20.2.5",
-    "typescript": "5.2.2"
-  }
+	"name": "graphql-api",
+	"version": "0.1.0",
+	"description": "graphql-api Graphweaver Project",
+	"scripts": {
+		"build": "graphweaver build",
+		"start": "graphweaver start",
+		"watch": "graphweaver watch",
+		"import": "graphweaver import"
+	},
+	"dependencies": {
+		"@apollo/client": "3.8.10",
+		"@as-integrations/aws-lambda": "2.0.1",
+		"@exogee/graphweaver": "link:../../../graphweaver/src/packages/core",
+		"@exogee/graphweaver-rest": "link:../../../graphweaver/src/packages/rest",
+		"@exogee/graphweaver-scalars": "link:../../../graphweaver/src/packages/scalars",
+		"@exogee/graphweaver-server": "link:../../../graphweaver/src/packages/server",
+		"class-validator": "0.14.0",
+		"got": "11.8.5",
+		"graphql": "16.8.1",
+		"graphweaver": "link:../../../graphweaver/src/packages/cli",
+		"react": "18.2.0",
+		"reflect-metadata": "0.1.13",
+		"type-graphql": "2.0.0-beta.2"
+	},
+	"devDependencies": {
+		"@types/node": "20.2.5",
+		"typescript": "5.2.2"
+	}
 }

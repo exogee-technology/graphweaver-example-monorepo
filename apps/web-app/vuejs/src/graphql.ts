@@ -9,6 +9,6 @@ const POSTS_QUERY = gql`
       userId
     }
   }
-`;
+`
 
-export { POSTS_QUERY };
+export { POSTS_QUERY }

@@ -1,3 +1,8 @@
 packages:
-  - 'apps/web-app/*'
-  - 'packages/*'
+  - apps/web-app/*
+  - packages/*
+
+onlyBuiltDependencies:
+  - '@apollo/protobufjs'
+  - esbuild
+  - vue-demi

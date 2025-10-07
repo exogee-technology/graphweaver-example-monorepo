@@ -6,20 +6,20 @@ import App from './App.vue'
 const cache = new InMemoryCache()
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:9001',
-});
+  uri: 'http://localhost:9001'
+})
 
 const apolloClient = new ApolloClient({
   cache,
-  link: httpLink,
+  link: httpLink
 })
 
 const app = createApp({
-  setup () {
+  setup() {
     provide(DefaultApolloClient, apolloClient)
   },
 
-  render: () => h(App),
+  render: () => h(App)
 })
 
-app.mount('#app');
+app.mount('#app')
